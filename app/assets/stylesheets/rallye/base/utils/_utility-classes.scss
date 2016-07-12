@@ -1,0 +1,85 @@
+
+/* _____ PROJECT UTILITY CLASSES _____ */
+
+.ir { @extend %ir; }
+.hidden { @extend %hidden; }
+//.visuallyhidden { @extend %visuallyhidden; }
+
+body.ie .no-mouse *:not(.no-mouse){
+  pointer-events:all !important;
+}
+
+.has-no-margin {
+  margin: 0;
+}
+.is-full-width {
+  width: 100%;
+}
+.is-full-height {
+  height: 100%;
+}
+.is-text-right {
+  text-align: right;
+}
+.is-text-left {
+  text-align: left;
+}
+.is-text-small {
+  font-size: .7em;
+}
+.is-9-em {
+  font-size: .9em;
+}
+.is-8-em {
+  font-size: .8em;
+}
+.is-7-em {
+  font-size: .7em;
+}
+.is-6-em {
+  font-size: .6em;
+  }
+.is-mirror-horizontal {
+  transform: scale(-1, 1);
+}
+.is-mirror-vertical {
+  transform: scale(1, 1);
+}
+.is-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.is-flex-column {
+  flex-direction: column;
+}
+.is-flex-container-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.is-flex-1 {
+  flex:1;
+}
+.no-mouse{
+  pointer-events:none !important;
+}
+
+// animations
+.animated {
+  @include animation-duration(1s);
+  @include animation-fill-mode(both);
+
+  &.infinite {
+    @include animation-iteration-count(infinite);
+  }
+
+  &.alternate {
+    @include animation-direction(alternate);
+  }
+
+  &.iteration {
+    @include animation-iteration-count(2);
+  }
+}

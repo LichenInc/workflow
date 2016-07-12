@@ -1,0 +1,13 @@
+
+@mixin spinner($size, $color) {
+  @include animation(three-quarters-loader 1250ms infinite linear);
+  border: ($size/6) solid $color;
+  border-right-color: transparent;
+  border-radius: ($size / 2);
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: $size;
+  height: $size;
+
+}

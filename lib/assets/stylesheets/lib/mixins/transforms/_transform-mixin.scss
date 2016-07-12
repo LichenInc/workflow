@@ -1,0 +1,12 @@
+@mixin transform($value, $useModernizr: true) {
+
+  $cssTransforms: getPrefix(csstransforms, $useModernizr);
+
+  #{map-get($cssTransforms, yes)} & {
+    -webkit-transform: #{$value}; // Saf3.1+, Chrome
+    -moz-transform: #{$value}; // FF3.5+
+    -ms-transform: #{$value}; // IE9
+    -o-transform: #{$value}; // Opera 10.5
+    transform: #{$value};
+  }
+}

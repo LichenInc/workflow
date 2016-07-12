@@ -1,0 +1,16 @@
+/*
+ * Mixin For @fonta-face
+ */
+
+@mixin fontface($name, $location, $weight: normal, $style: normal) {
+	@font-face {
+	    font-family: $name;
+	    src: url('#{$location}.eot');
+	    src: url('#{$location}.eot?#iefix') format('embedded-opentype'),
+	         url('#{$location}.woff') format('woff'),
+	         url('#{$location}.ttf') format('truetype'),
+	         url('#{$location}.svg') format('svg');
+	    font-weight: $weight;
+	    font-style: $style;
+	}	
+}

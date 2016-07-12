@@ -1,0 +1,15 @@
+@mixin box-shadow($value, $fallback:'', $useModernizr: true) {
+
+  $boxShadow: getPrefix(boxshadow, $useModernizr);
+
+  #{map-get($boxShadow, yes)} & {
+    -webkit-box-shadow: #{$value}; // Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+
+    box-shadow: #{$value}; // Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5
+  }
+
+  @if $fallback != '' {
+    #{map-get($boxShadow, no)} & {
+      border-color: #{$fallback};
+    }
+  }
+}

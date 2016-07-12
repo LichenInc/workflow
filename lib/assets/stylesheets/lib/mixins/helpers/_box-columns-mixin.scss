@@ -1,0 +1,13 @@
+@mixin box-columns($nb: 3, $gap: 10px, $useModernizr: true) {
+
+  $cssColumns: getPrefix(csscolumns, $useModernizr);
+
+  #{map-get($cssColumns, yes)} & {
+    -webkit-column-count: $nb;
+    -webkit-column-gap: $gap; // Safari 3, Chrome
+    -moz-column-count: $nb;
+    -moz-column-gap: $gap; // Firefox 3.5+
+    column-count: $nb;
+    column-gap: $gap; // Opera 11+
+  }
+}

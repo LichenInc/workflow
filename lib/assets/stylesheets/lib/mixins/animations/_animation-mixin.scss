@@ -1,0 +1,11 @@
+@mixin animation($value, $useModernizr: true) {
+
+  $cssAnimations: getPrefix(cssanimations, $useModernizr);
+
+  #{map-get($cssAnimations, yes)} & {
+    -webkit-animation: #{$value}; // Chrome, Safari 5
+    -moz-animation: #{$value}; // Firefox 5-15
+    -o-animation: #{$value}; // Opera 12+
+    animation: #{$value}; // Chrome, Firefox 16+, IE 10+, Safari 5
+  }
+}

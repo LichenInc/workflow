@@ -1,0 +1,35 @@
+@include importOnce('project-globals') {
+
+  /* _____ GLOBAL DEFAULTS _____ */
+
+  html {
+    height:100%;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    margin:0;
+    height:100%;
+  }
+
+  /* _____ LAYOUT _____ */
+  body{
+    font-family: $font-primary;
+    min-width: 750px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  iframe{
+    border: none;
+  }
+}
+
+@import "./globals/_base";

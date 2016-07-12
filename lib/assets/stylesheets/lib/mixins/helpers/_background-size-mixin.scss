@@ -1,0 +1,9 @@
+@mixin background-size($value, $useModernizr: true) {
+
+  $backgroundSize: getPrefix(backgroundsize, $useModernizr);
+
+  #{map-get($backgroundSize, yes)} & {
+    -webkit-background-size: $value; // Saf3-4
+    background-size: $value; // Opera, IE9, Saf5, Chrome, FF4+
+  }
+}

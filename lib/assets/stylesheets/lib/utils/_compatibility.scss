@@ -1,0 +1,38 @@
+@function image-path($url) {
+  @if (str-slice($url, 0, 1) == '/') {
+    @return '#{$url}'
+  }
+  @else {
+    @return '/assets/#{$url}'
+  }
+}
+
+@function image-url($url) {
+  @return url(image-path($url))
+}
+
+@function font-path($url) {
+  @if (str-slice($url, 0, 1) == '/') {
+    @return '#{$url}'
+  }
+  @else {
+    @return '/assets/#{$url}'
+  }
+}
+
+@function font-url($url) {
+  @return url(font-path($url))
+}
+
+@function asset-path($url) {
+  @if (str-slice($url, 0, 1) == '/') {
+    @return '#{$url}'
+  }
+  @else {
+    @return '/assets/#{$url}'
+  }
+}
+
+@function asset-url($url) {
+  @return url(asset-path($url))
+}

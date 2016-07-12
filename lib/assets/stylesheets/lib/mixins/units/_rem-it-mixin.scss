@@ -1,0 +1,21 @@
+@mixin remIt($attr, $value, $value2: '', $before: '', $between:'', $after: '', $useModernizr: true) {
+
+  $cssremunit: getPrefix(cssremunit, $useModernizr);
+
+  // it's good to keep the fallback at all times for debug purpose
+  @if $value2 == '' {
+    #{$attr}: #{$before}#{$value}px#{$after};
+  } @else {
+    #{$attr}: #{$before}#{$value}px#{$between}#{$value2}px#{$after};
+  }
+
+  #{map-get($cssremunit, yes)} & {
+
+    @if $value2 == '' {
+      #{$attr}: #{$before}#{$value/$baseFontSize}rem#{$after};
+    } @else {
+      #{$attr}: #{$before}#{$value/$baseFontSize}rem#{$between}#{$value/$baseFontSize}rem#{$after};
+    }
+
+  }
+}

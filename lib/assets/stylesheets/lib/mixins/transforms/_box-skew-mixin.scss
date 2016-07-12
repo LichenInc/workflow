@@ -1,0 +1,10 @@
+@mixin box-skew($degrees1, $degrees2, $useModernizr: true) {
+
+  $cssTransforms: getPrefix(csstransforms, $useModernizr);
+
+  #{map-get($cssTransforms, yes)} & {
+    transform: skew(#{$degrees1}deg, #{$degrees2}deg);
+    -ms-transform: skew(#{$degrees1}deg, #{$degrees2}deg); // IE 9
+    -webkit-transform: skew(#{$degrees1}deg, #{$degrees2}deg); // Safari and Chrome
+  }
+}

@@ -1,0 +1,9 @@
+default: &default
+
+development:
+  <<: *default
+  MOT_API_URL: 'http://laboratoire.grandducenligne.com/system/code_de_lecriture/datas'
+
+production:
+  <<: *default
+  MOT_API_URL: '/system/code_de_lecriture/datas'

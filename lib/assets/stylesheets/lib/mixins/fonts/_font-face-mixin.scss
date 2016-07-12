@@ -1,0 +1,115 @@
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: normal, $style: normal, $exts: eot otf woff2 woff ttf svg, $svgname: null) {
+  $src: null;
+
+  $extmods: (
+          eot: "?iefix",
+          svg: "#" + if($svgname, $svgname, str-replace($name, " ", "_"))
+  );
+
+  $formats: (
+          otf: "opentype",
+          eot: "embedded-opentype",
+          ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, font-url($path + "." + $extmod) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    @if index($exts, eot) {
+      src: font-url($path + ".eot");
+    }
+    src: $src;
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+//https://css-tricks.com/snippets/css/using-font-face/
+//LAST UPDATED ON: APRIL 7, 2015
+//
+//Deepest Possible Browser Support
+//
+//@font-face {
+//  font-family: 'MyWebFont';
+//  src: url('webfont.eot'); /* IE9 Compat Modes */
+//  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//  url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+//  url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+//  url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+//  url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+//}
+//
+//body {
+//  font-family: 'MyWebFont', Fallback, sans-serif;
+//}
+//
+//Practical Level of Browser Support
+//
+//@font-face {
+//  font-family: 'MyWebFont';
+//  src:  url('myfont.woff2') format('woff2'),
+//  url('myfont.woff') format('woff');
+//}
+//
+//Chrome	Safari	Firefox	Opera	IE	Android	iOS
+//5+	5.1+	3.6+	11.50+	9+	4.4+	5.1+
+//
+//Slightly Deeper Browser Support
+//
+//@font-face {
+//  font-family: 'MyWebFont';
+//  src: url('myfont.woff2') format('woff2'),
+//  url('myfont.woff') format('woff'),
+//  url('myfont.ttf') format('truetype');
+//}
+//
+//Chrome	Safari	Firefox	Opera	IE	Android	iOS
+//3.5+	3+	3.5+	10.1+	9+	2.2+	4.3+
+//
+//Super Progressive Browser Support
+//
+//@font-face {
+//  font-family: 'MyWebFont';
+//  src: url('myfont.woff2') format('woff2');
+//}
+//
+//Chrome	Safari	Firefox	Opera	IE	Android	iOS
+//36+	No	35+ with flag	23+	No	37	No
+//
+//Alternative Techniques
+//
+//@import url(//fonts.googleapis.com/css?family=Open+Sans);
+//
+//or
+//
+//<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+//
+//body {
+//  font-family: 'Open Sans', sans-serif;
+//}
+//
+// etc...
+// https://css-tricks.com/snippets/css/using-font-face/

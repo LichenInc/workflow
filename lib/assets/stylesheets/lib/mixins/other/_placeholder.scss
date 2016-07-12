@@ -1,0 +1,12 @@
+/*
+ * Simple Mixin For Compass Placeholder Text
+ */
+
+@mixin content-placeholder {
+  &.placeholder                { @content; }
+  &:-moz-placeholder           { @content; }     /* Mozilla Firefox 4 to 18 */
+  &::-moz-placeholder          { @content;       /* Mozilla Firefox 19+ */
+                                 opacity: 1; } // See https://github.com/twbs/bootstrap/pull/11526
+  &:-ms-input-placeholder      { @content; }     /* Internet Explorer 10+ */
+  &::-webkit-input-placeholder { @content;  }    /* WebKit browsers */
+}

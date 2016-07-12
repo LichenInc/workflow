@@ -1,0 +1,32 @@
+button{
+  @extend %button-without-style;
+  padding: 1em;
+  font-size: inherit;
+  cursor: pointer;
+}
+button.button{
+  background: white;
+  font-size: inherit;
+  font-family: inherit;
+  color: #000;
+  &:hover{
+    opacity: .8;
+  }
+}
+
+.btn-outline{
+  color: #000;
+  background: white;
+  border: 1px solid $color-accent;
+
+}
+._btn-opacity {
+  cursor: pointer;
+  &:hover {
+    opacity: .7;
+  }
+}
+.btn-default{
+  background: $color-accent;
+  color: #000;
+}

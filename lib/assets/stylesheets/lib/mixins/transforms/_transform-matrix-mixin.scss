@@ -1,0 +1,12 @@
+@mixin transform-matrix($value, $useModernizr: true) {
+
+  $cssTransforms: getPrefix(csstransforms, $useModernizr);
+
+  #{map-get($cssTransforms, yes)} & {
+    -webkit-transform: matrix(#{$value});
+    -moz-transform: matrix(#{$value});
+    -ms-transform: matrix(#{$value});
+    -o-transform: matrix(#{$value});
+    transform: matrix(#{$value});
+  }
+}

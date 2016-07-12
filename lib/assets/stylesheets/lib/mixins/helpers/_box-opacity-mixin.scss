@@ -1,0 +1,4 @@
+@mixin box-opacity($value) {
+  opacity: $value; // Chrome 4+, FF2+, Saf3.1+, Opera 9+, IE9, iOS 3.2+, Android 2.1+
+  filter: alpha(opacity=$value*100); // IE6-IE8
+}

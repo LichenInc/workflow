@@ -1,0 +1,14 @@
+{{#items}}
+${{name}}-x: {{px.offset_x}};
+${{name}}-y: {{px.offset_y}};
+${{name}}-width: {{px.width}};
+${{name}}-height: {{px.height}};
+${{name}}-image: '{{{sprite.escaped_image}}}';
+${{name}}-total-width: {{px.total_width}};
+${{name}}-total-height: {{px.total_height}};
+${{name}}-retina-image: '{{{retina.escaped_image}}}';
+${{name}}-retina-total-width: {{retina.total_width}}px;
+${{name}}-retina-total-height: {{retina.total_height}}px;
+${{name}}: ${{name}}-x ${{name}}-y ${{name}}-width ${{name}}-height ${{name}}-image ${{name}}-total-width ${{name}}-total-height ${{name}}-retina-image ${{name}}-retina-total-width ${{name}}-retina-total-height;
+{{/items}}
+

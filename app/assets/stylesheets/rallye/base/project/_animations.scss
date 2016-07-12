@@ -1,0 +1,16 @@
+@import "animatewithsass/animate.scss";
+
+@include importOnce('project-animations') {
+
+.slideInLeft {
+  @include slideInLeft($duration: 500ms);
+}
+.slideOutRight {
+  @include slideOutRight($duration: 500ms);
+}
+.slideInRight {
+  @include slideInRight($duration: 500ms);
+}
+
+
+}

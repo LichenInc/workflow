@@ -1,0 +1,36 @@
+// Fonts
+// ==========================================================================
+
+@mixin importFont($fontname, $filename, $svgLabel, $weight: normal, $style: normal, $woff2: false) {
+
+  @font-face {
+    font-family: $fontname;
+
+    // IE9 Compat Modes
+    src: font-url('#{$filename}.eot');
+    // IE6-IE8
+    @if $woff2 {
+      src: font-url('#{$filename}.eot?#iefix') format('embedded-opentype'),
+        // Modern Browsers
+      font-url('#{$filename}.woff2') format('woff2'),
+      font-url('#{$filename}.woff') format('woff'),
+        // Safari, Android, iOS
+      font-url('#{$filename}.ttf') format('truetype'),
+        // Legacy iOS
+      font-url('#{$filename}.svg##{$svgLabel}') format('svg');
+    } @else {
+      src: font-url('#{$filename}.eot?#iefix') format('embedded-opentype'),
+        // Modern Browsers
+      font-url('#{$filename}.woff') format('woff'),
+        // Safari, Android, iOS
+      font-url('#{$filename}.ttf') format('truetype'),
+        // Legacy iOS
+      font-url('#{$filename}.svg##{$svgLabel}') format('svg');
+    }
+
+
+    font-weight: $weight;
+    font-style: $style;
+  }
+
+}

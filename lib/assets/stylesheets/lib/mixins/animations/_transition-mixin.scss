@@ -1,0 +1,11 @@
+@mixin transition($value, $useModernizr: true) {
+
+  $cssTransitions: getPrefix(csstransitions, $useModernizr);
+
+  #{map-get($cssTransitions, yes)} & {
+    -webkit-transition: #{$value}; // Saf3.2+, Chrome
+    -moz-transition: #{$value}; // FF4+
+    -o-transition: #{$value}; // Opera 10.5+
+    transition: #{$value};
+  }
+}

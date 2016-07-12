@@ -1,0 +1,14 @@
+.input-texteatrou{
+  @extend %input-without-style;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: #000;
+
+  transition: border-color .3s ease-in-out;
+
+  &:focus{
+    @include themify () { 
+      border-color: $theme-color;
+    }
+  }
+}

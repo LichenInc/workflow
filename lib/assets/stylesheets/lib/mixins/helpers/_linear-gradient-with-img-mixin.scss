@@ -1,0 +1,24 @@
+// TODO: refactorize with other linear-gradient mixins
+@mixin linear-gradient-with-img($from, $to, $img, $bkgmore: no-repeat, $fallback: '', $useModernizr: true) {
+
+  $cssGradients: getPrefix(cssgradients, $useModernizr);
+
+  background: #{$img} #{$bkgmore};
+
+  #{map-get($cssGradients, no)} & {
+    @if $fallback != '' {
+      background-color: $fallback;
+    } @else {
+      background-color: mix($from, $to);
+    }
+  }
+
+  #{map-get($cssGradients, yes)} & {
+    background-image: $img, -webkit-gradient(linear, left top, left bottom, from($from), to($to)); // Saf4+, Chrome
+    background-image: $img, -webkit-linear-gradient(top, $from, $to); // Chrome 10+, Saf5.1+, iOS 5+
+    background-image: $img, -moz-linear-gradient(top, $from, $to); // FF3.6+
+    background-image: $img, -o-linear-gradient(top, $from, $to); // Opera 11.10+
+    background-image: $img, linear-gradient(to bottom, $from, $to);
+  }
+
+}

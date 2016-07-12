@@ -1,0 +1,22 @@
+{{#each layouts}}
+  {{#each sprites}}
+      {{#unless dpi}}
+${{cssesc ../../classname}}-image: '{{{escimage url}}}';
+${{cssesc ../../classname}}-total-width: {{width}}px;
+${{cssesc ../../classname}}-total-height: {{height}}px;
+      {{/unless}}
+      {{#if dpi}}
+${{cssesc ../../classname}}-retina-image: '{{{escimage url}}}';
+${{cssesc ../../classname}}-retina-total-width: {{baseWidth}}px;
+${{cssesc ../../classname}}-retina-total-height: {{baseHeight}}px;
+      {{/if}}
+  {{/each}}
+  {{#each layout.items}}
+${{cssesc meta.name}}-x: -{{baseDim x}}px;
+${{cssesc meta.name}}-y: -{{baseDim y}}px;
+${{cssesc meta.name}}-width: {{baseDim width}}px;
+${{cssesc meta.name}}-height: {{baseDim height}}px;
+${{cssesc meta.name}}: ${{cssesc meta.name}}-x ${{cssesc meta.name}}-y ${{cssesc meta.name}}-width ${{cssesc meta.name}}-height ${{cssesc ../classname}}-image ${{cssesc ../classname}}-total-width ${{cssesc ../classname}}-total-height ${{cssesc ../classname}}-retina-image ${{cssesc ../classname}}-retina-total-width ${{cssesc ../classname}}-retina-total-height;
+  {{/each}}
+{{/each}}
+

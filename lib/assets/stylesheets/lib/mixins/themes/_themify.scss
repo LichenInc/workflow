@@ -1,0 +1,37 @@
+@function map-fetch-themify($map, $keys) {
+  $key: nth($keys, 1);
+  $length: length($keys);
+  $value: map-get($map, $key);
+
+  @if $value != null {
+    @if $length > 1 {
+      $rest: ();
+
+      @for $i from 2 through $length {
+        $rest: append($rest, nth($keys, $i))
+      }
+
+      @return map-fetch-themify($value, $rest);
+
+    } @else {
+      @return $value;
+    }
+  } @else {
+    @return false;
+  }
+}
+
+//@mixin themify-example ($themes: $themes) {
+//  @each $theme, $map in $themes {
+//    .#{$theme} &  {
+//      // Define theme color
+//      $theme-color: map-fetch-themify($themes, $theme "color") !global;
+//      // ... other vars to use
+//
+//      @content;
+//
+//      // Reset theme color to null
+//      $theme-color: null !global;
+//    }
+//  }
+//}

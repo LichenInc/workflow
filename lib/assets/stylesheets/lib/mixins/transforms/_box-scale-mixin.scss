@@ -1,0 +1,12 @@
+@mixin box-scale($ratio, $useModernizr: true) {
+
+  $cssTransforms: getPrefix(csstransforms, $useModernizr);
+
+  #{map-get($cssTransforms, yes)} & {
+    -webkit-transform: scale($ratio); // Chrome, Safari 3.1+
+    -moz-transform: scale($ratio); // Firefox 3.5+
+    -ms-transform: scale($ratio); // IE 9
+    -o-transform: scale($ratio); // Opera 10.50-12.00
+    transform: scale($ratio); // Firefox 16+, IE 10+, Opera 12.10+
+  }
+}

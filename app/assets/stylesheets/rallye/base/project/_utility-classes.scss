@@ -1,0 +1,9 @@
+@include importOnce('project-utility-classes') {
+
+  /* _____ UTILITY CLASSES _____ */
+
+.has-no-mouse {
+  pointer-events: none;
+}
+
+}

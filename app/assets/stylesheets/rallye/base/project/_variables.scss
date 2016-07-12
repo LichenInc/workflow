@@ -1,0 +1,66 @@
+/* _____ VARIABLES _____ */
+
+// $font-marianina-light: 'MarianinaCnFY-Light';
+// $font-marianina-bold: 'MarianinaCnFY-Bold';
+
+$font-primary: "Gotham-Rd", sans-serif;
+// $font-primary-bold: "Vitesse SSm A", "Vitesse SSm B", sans-serif;
+$font-secondary: "Gotham A", "Gotham B", sans-serif;
+// $font-secondary-bold: $font-marianina-bold, sans-serif;
+$font-primary-weight-bold: 800;
+$font-primary-weight-medium: 500;
+
+// Typography
+$base-font-family: $font-primary;
+$heading-font-family: $font-primary;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Font Weight
+$base-font-normal: 400;
+$base-font-bold: 700;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $blue;
+$color-accent: $blue;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-error-color: $action-color;
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+// breakpoints
+$mobile: 450px;
+$tablet: 900px;
+$laptop: 1100px;
+$large: 2500px;

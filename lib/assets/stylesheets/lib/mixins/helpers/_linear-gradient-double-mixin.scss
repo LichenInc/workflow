@@ -1,0 +1,31 @@
+// TODO: rewrite with lists and make generic
+@mixin linear-gradient-double($from1, $to1, $from2, $to2, $type: 'vertical', $fallback: '', $useModernizr: true) {
+
+  $cssGradients: getPrefix(cssgradients, $useModernizr);
+
+  #{map-get($cssGradients, no)} & {
+    @if $fallback != '' {
+      background-color: $fallback;
+    } @else {
+      background-color: mix($from1, $to1);
+    }
+  }
+
+  $endPointWebkit: 'left bottom';
+  $endPointVendor: 'top';
+  $endPoint: 'bottom';
+  @if $type == 'horizontal' {
+    $endPointWebkit: 'right top';
+    $endPointVendor: 'left';
+    $endPoint: 'right';
+  }
+
+  #{map-get($cssGradients, yes)} & {
+    background-image: -webkit-gradient(linear, left top, #{$endPointWebkit}, color-stop(0, $from1), color-stop(.5, $to1), color-stop(.51, $from2), to($to2)); // Saf4+, Chrome
+    background-image: -webkit-linear-gradient(#{$endPointVendor}, $from1, $to1 50%, $from2 51%, $to2); // Chrome 10+, Saf5.1+, iOS 5+
+    background-image: -moz-linear-gradient(#{$endPointVendor}, $from1, $to1 50%, $from2 51%, $to2); // FF3.6+
+    background-image: -o-linear-gradient(#{$endPointVendor}, $from1, $to1 50%, $from2 51%, $to2); // Opera 11.10+
+    background-image: linear-gradient(to #{$endPoint}, $from1, $to1 50%, $from2 51%, $to2);
+  }
+
+}

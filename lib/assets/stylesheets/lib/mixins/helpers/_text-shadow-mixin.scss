@@ -1,0 +1,8 @@
+@mixin text-shadow($value, $useModernizr: true) {
+
+  $textShadow: getPrefix(textshadow, $useModernizr);
+
+  #{map-get($textShadow, yes)} & {
+    text-shadow: #{$value}; // Chrome, Firefox 3.5+, IE 10+, Opera 9+, Safari 1+
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "dirs": {
+    "app": "app",
+    "assets": "assets",
+    "styles": "assets/stylesheets",
+    "scripts": "assets/javascripts",
+    "images": "assets/images",
+    "templates": "assets/templates",
+    "fonts": "assets/fonts",
+    "views": "views",
+    "lib": "lib",
+    "vendor": "lib/vendor",
+    "public": "public",
+    "tmp": "tmp/gulp",
+    "cache": "tmp/gulp/cache",
+    "dist": "public/assets",
+    "bower_components": "vendor/bower_components",
+    "build": "public/assets"
+  },
+  "autoprefixer": {
+    "default": {
+      "browsers" : ["> 1%", "last 2 versions", "Firefox ESR", "Opera 12.1"]
+    }
+  },
+  "sass": {
+    "options": {
+      "outputStyle": "nested",
+      "sourceComments" : "normal",
+      "precision": 10,
+      "includePaths": [
+        "./app/assets/stylesheets",
+        "./vendor/bower_components",
+        "./vendor/assets/stylesheets",
+        "./lib/vendor/assets/stylesheets",
+        "./lib/assets/stylesheets",
+        "./node_modules"
+      ]
+    },
+    "styles": [
+      {"name": "rallye-icons", "main": "icons/rallye/rallye-icons.svg.data.scss", "out": "icons/rallye" },
+      {"name": "rallye", "main": "rallye.scss", "out": "", "sources": "rallye/**/*.scss", "sourcemaps":  true}
+    ]
+  },
+  "browserify": {
+    "sourcemaps": true,
+    "babelify": ["vue-validator", "vue-element-query", "qs"],
+    "bundleConfigs": [
+      {
+        "name": "icons-loader",
+        "options": {
+          "entries": "./lib/assets/javascripts/grunticon/icons-loader.js",
+          "outputName" : "icons-loader.js"
+        }
+      },
+      {
+        "name": "vendor",
+        "options": {
+          "outputName" : "vendor.js",
+          "extensions": [".js", ".es6"],
+          "require": [
+            "babel-polyfill",
+
+            "lodash",
+            "jquery",
+            "moment",
+            "countup",
+
+            "vue",
+            "vue-element-query",
+
+            "module-loader",
+            "data-store"
+          ]
+        }
+      },
+      {
+        "name": "rallye",
+        "base": "decouvrez",
+        "vueify": true,
+        "options": {
+          "entries": "./app/assets/javascripts/decouvrez-init.js",
+          "outputName" : "rallye.js",
+          "extensions": [".js", ".es6"],
+          "external": [
+            "babel-polyfill",
+
+            "lodash",
+            "jquery",
+            "moment",
+            "countup",
+
+            "vue",
+            "vue-element-query",
+
+            "module-loader",
+            "data-store"
+          ]
+        }
+      }
+    ]
+  },
+  "grunticon": {
+    "icons": [
+      {"name": "rallye", "base": "decouvrez/icons", "regex": "*.svg", "out": "icons/rallye", "outputName": "rallye-icons", "pngs": "decouvrez/icons/pngs"}
+    ]
+  },
+  "browsersync": {
+    "open": false,
+    "port": 9000,
+    "proxy": "http://www.lvh.me:3000",
+    "serveStatic": true,
+    "online": false,
+    "tunnel": true,
+    "xip": true,
+    "minify": true,
+    "socket": {
+      "domain": "http://www.lvh.me:9000"
+    },
+    "ui": {
+      "port": 9100,
+      "weinre": {
+        "port": 8080
+      }
+    }
+  }
+}

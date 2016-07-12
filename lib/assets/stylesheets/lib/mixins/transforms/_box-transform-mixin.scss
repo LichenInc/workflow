@@ -1,0 +1,12 @@
+@mixin box-transform($val, $useModernizr: true) {
+
+  $cssTransforms: getPrefix(csstransforms, $useModernizr);
+
+  #{map-get($cssTransforms, yes)} & {
+    -webkit-transform: #{$val};
+    -moz-transform: #{$val};
+    -ms-transform: #{$val};
+    -o-transform: #{$val};
+    transform: #{$val};
+  }
+}

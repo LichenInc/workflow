@@ -1,0 +1,22 @@
+@mixin radial-gradient($from, $to, $fallback: '', $useModernizr: true) {
+
+  $cssGradients: getPrefix(cssgradients, $useModernizr);
+
+  #{map-get($cssGradients, no)} & {
+    @if $fallback != '' {
+      background-color: $fallback;
+    } @else {
+      background-color: mix($from, $to);
+    }
+  }
+
+  #{map-get($cssGradients, yes)} & {
+    background: -moz-radial-gradient(center, ellipse cover, $from 0%, $to 100%) fixed; /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to)) fixed; /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, $from 0%, $to 100%) fixed; /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, $from 0%, $to 100%) fixed; /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, $from 0%, $to 100%) fixed; /* IE10+ */
+    background: radial-gradient(ellipse at center, $from 0%, $to 100%) fixed; /* W3C */
+  }
+
+}

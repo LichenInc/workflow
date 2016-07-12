@@ -1,0 +1,7 @@
+@include importOnce('project-fonts') {
+
+  /* _____ FONTS _____ */
+  @include importFont('Gotham-Rd', 'gothamRd/GothamRounded-Bold/GothamRounded-Bold','gothambold', $weight: 700);
+  @include importFont('Gotham-Rd', 'gothamRd/GothamRounded-Book/GothamRounded-Book','gothambold', $weight: 400);
+
+}

@@ -1,0 +1,216 @@
+// project specific mixins
+
+@import "./mixins/spinner";
+@import "./mixins/patterns";
+
+
+@mixin mark-badge($background-color, $color:#fff){
+  background-color: $background-color;
+  @include size(2em);
+  border-radius: 100%;
+  color: $color;
+  text-align: center;
+  line-height: 2em;
+  font-variant: normal;
+  font-style: normal;
+  &:after {
+    content: '✓';
+  }
+}
+@mixin badge($background-color, $color:#fff){
+  background-color: $background-color;
+  @include size(2em);
+  border-radius: 100%;
+  color: $color;
+  text-align: center;
+  line-height: 2em;
+  font-style: normal;
+}
+
+@mixin pattern-notelines(){
+  background: linear-gradient(to bottom, #3B85C7 0%, transparent 8%) 0 4px;
+  background-size: 100% 20px;
+  border-radius: 3px;
+}
+
+@mixin burger($width: 30px, $height: 5px, $gutter: 3px, $color: #000, $border-radius: 0, $transition-duration: .3s) {
+    $burger-height: $height !global;
+    $burger-gutter: $gutter !global;
+    position: relative;
+    margin-top: $height + $gutter;
+    margin-bottom: $height + $gutter;
+    user-select: none;
+    &, &::before, &::after {
+        display: block;
+        width: $width;
+        height: $height;
+        background-color: $color;
+        @if $border-radius != 0 {
+            border-radius: $border-radius;
+        }
+        transition-property: background-color, transform;
+        transition-duration: $transition-duration;
+    }
+    &::before, &::after {
+        position: absolute;
+        content: "";
+    }
+    &::before {
+        top: -($height + $gutter);
+    }
+    &::after {
+        top: $height + $gutter;
+    }
+}
+
+@mixin close-cross($crossSize ,$crossStroke:10%, $crossBg:#000) {
+	width: $crossSize;
+	height: $crossSize;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+  padding: 0;
+	&:before, &:after{
+		background: $crossBg;
+		position: absolute;
+		display: block;
+		content: '';
+		width: 100%;
+		height: $crossStroke;
+		margin-top:-10%;
+	}
+	&:before{
+		transform:rotate(45deg);
+	}
+	&:after{
+		transform:rotate(-45deg);
+	};
+	&.-animate{
+		transition: all 1s ease;
+	  &:hover{
+      transform:rotate(180deg);
+	  }
+	}
+}
+
+@mixin checkmark($stroke:2px) {
+  display:inline-block;
+
+  &:after{
+    /*Add another block-level blank space*/
+    content: '';
+    display: block;
+
+    /*Make it a small rectangle so the border will create an L-shape*/
+    width: 3px;
+    height: 6px;
+
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border: solid #000;
+    border-width: 0 $stroke $stroke 0;
+
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    transform: rotate(45deg);
+  }
+}
+
+@mixin pattern-notelines(){
+  background: linear-gradient(to bottom, #3B85C7 0%, transparent 8%) 0 4px;
+  background-size: 100% 20px;
+  border-radius: 3px;
+}
+
+@mixin button-unstyled {
+  @extend a;
+  background: none;
+  border: none;
+}
+
+@mixin list-unstyled {
+  li{
+    list-style: none;
+  }
+  padding: 0;
+}
+
+@mixin glow($color){ //EMILIO
+  animation: glow-#{$color} 3s linear infinite alternate;
+  border: 1px solid darken($color, 5%);
+  @keyframes glow-#{$color} {
+    from { background-color: desaturate( $color, 10%); box-shadow: 0 0 9px rgba( desaturate( $color, 20%), .7); }
+    50% { background-color: $color; box-shadow: 0 0 18px $color; }
+    to { background-color: desaturate( $color, 10%); box-shadow: 0 0 9px rgba( desaturate( $color, 20%), .7); }
+  }
+}
+
+@mixin stagger ($iteration: 10) {
+  @for $i from 1 through 10 {
+
+    &:nth-child(#{$i}) {
+
+     $stagger-index: $i !global;
+
+     @content;
+
+     $stagger-index: null !global;
+    }
+  }
+
+}
+
+@mixin custom-underline($underline-color: $underline-color){
+  text-decoration: none;
+  display: inline-table;
+  &:after {
+    content: "";
+    border-bottom: 0.1em solid $underline-color;
+    display: table-caption;
+    caption-side: bottom;
+    position: relative;
+    margin-top:-0.15em;
+  }
+}
+
+@mixin button($color, $text-color) {
+  outline: none;
+	@include button-static;
+
+	background-color: $color;
+	color: $text-color;
+	border-color: mix(black, $color, 25%);
+
+	&:hover {
+		background-color: mix(black, $color, 15%);
+		border-color: mix(black, $color, 40%);
+	}
+  &[disabled] {
+		background-color: grey;
+	}
+}
+
+@mixin button-static {
+	border: 1px solid;
+	border-radius: 5px;
+	padding: .25em .5em;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+@mixin surligne($color, $display: inline) {
+  background-color: $color;
+  padding: .25em .25em;
+  display: #{$display};
+  box-shadow: 2px 2px 8px rgba(0,0,0,.3);
+}
+
+@mixin element-query($value, $attribute: min-width) {
+  &[#{$attribute}~="#{$value}"] {
+    @content;
+  }
+}
+
+@mixin respond-to($breakpoint, $method:max-width) {
+    @media only screen and (#{$method}: #{$breakpoint}) { @content; }
+}

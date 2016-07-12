@@ -1,0 +1,55 @@
+@include importOnce('project-transitions') {
+
+  /* always present */
+  .expand-transition {
+    transition: all .3s ease;
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+  /* .expand-enter defines the starting state for entering */
+  /* .expand-leave defines the ending state for leaving */
+  .expand-enter, .expand-leave {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  /* always present */
+  .fade-transition {
+    transition: opacity .35s ease;
+    opacity: 1;
+  }
+
+  /* .expand-enter defines the starting state for entering */
+  /* .expand-leave defines the ending state for leaving */
+  .fade-enter, .fade-leave {
+    opacity: 0;
+  }
+
+  .scale-transition {
+    transition: transform .3s ease, opacity .3s ease;
+    transform: scale(1,1);
+    opacity: 1;
+  }
+
+
+  .scale-enter, .scale-leave {
+    transform: scale(0,0);
+    opacity: 0;
+  }
+
+  .__slideDownTransition {
+    transition: all .3s ease;
+    overflow-y: hidden;
+  }
+  .slideDown-closed {
+    max-height: 0!important;
+  }
+
+  .slideOutRight {@include slideOutRight($duration:350ms);}
+  .slideInLeft {@include slideInLeft($duration:350ms);}
+  .slideInRight {@include slideInRight($duration:350ms);}
+  .slideOutLeft {@include slideOutLeft($duration:350ms);}
+
+
+}

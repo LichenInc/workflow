@@ -1,0 +1,51 @@
+.sousconsigne { //HACK override margin from p (v-html)
+  > * {
+    margin: 0;
+  }
+}
+
+.enonce-tile { //HACK make last child row with no margin for all enonce (hack the scoped css)
+  .row{
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.question.-grouped{
+  > *{
+    border-top-right-radius: 0!important;
+    border-top-left-radius: 0!important;
+  }
+}
+
+.resize-sensor, .resize-shrink, .resize-expand {
+  /* This is the magic bit */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+	user-select: none;
+	text-size-adjust: none;
+}
+
+.MathJax span {font-size: inherit}
+
+.ckoverrride * {
+  &:not(.math-tex *):not(.selectpanel):not(b, strong) { //ToDo : HACK override styles from CK editor to keep consistent fonts, etc;
+    font-family: $font-primary!important;
+    font-weight: normal!important;
+    font-size: 1em!important;
+    line-height: 1.2em!important;
+    color: inherit!important;
+  }
+
+}
+
+
+
+.math-tex{ // fix margin for mathtex els
+  margin: 0px .5em 0 0;
+}
