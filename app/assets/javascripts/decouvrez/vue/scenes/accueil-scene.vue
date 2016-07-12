@@ -2,7 +2,7 @@
 
   import Http from 'async/http'
   import Router from 'hype/router'
-  import markdown from 'vue/directives/markdown'
+  // import markdown from 'vue/directives/markdown'
 
   module.exports = {
     name: 'AccueilScene',
@@ -15,9 +15,9 @@
     },
     components: {
     },
-    directives: {
-       markdown,
-    },
+    // directives: {
+    //    markdown,
+    // },
     ready() {
       // marked.setOptions({
       //   renderer: new marked.Renderer(),

@@ -5,11 +5,13 @@
 [ef3acaa1]: http://lichencommunications.com/ "Lichen communications"
 
 - 15 years of experience in design and advertising
+
 - Clients in many different sectors:
 	- education (Educalivres)
 	- publishing (Gallimard, Renaud-Bray)
 	- medical equipment (Dufort & Lavigne)
 	- public institutions (MAC, BANQ, Amis de la montagne)
+
 
 - What we are producing :
 	- websites (popup, CMS with admin, etc...)
@@ -22,7 +24,8 @@
 	- interactive scenography
 	- and even hardware !
 
-	- We like to play with web technologies, we love to hack it, sometimes even break it. **Lichen is a laboratory**
+
+- We like to play with web technologies, we love to hack it, sometimes even break it. **Lichen is a laboratory**
 
 ---------------
 
@@ -70,8 +73,8 @@
 - Flash nostalgia ? (_Was it that bad ?_)
 - The joy of breaking dogmas (_We already told you that we like that_)
 
-### Hype
-[Tumult Hype][00a16d93]
+## Hype
+[Official website](http://tumult.com/hype/)
 - Hype is amazing: checkout [examples](http://tumult.com/hype/gallery/)
 - It's used by **La Presse** to handle advertising in **LaPresse+**.
 
@@ -85,7 +88,6 @@
 	. the client wants to have a sneak peek at the layouts ? Just export the layout to dropbox and send the link.
 	. its quick - very quick -->
 
-  [00a16d93]: http://tumult.com/hype/ "Tumult Hype"
 
 <!-- - First result were very good. but … (there’s always a but)
 	- app becomes very hard to maintain as it grows complex
@@ -97,9 +99,9 @@
 	=> That’s why we chose Vue.js -->
 
 ## Vue.js
-Powerful lightweight reactive DOM library
-[Official website
-](https://vuejs.org/)
+Powerful lightweight reactive DOM library:
+
+[Official website](https://vuejs.org/)
 - onefile components (vueify)
 - growing community
 - plugins : vuex(redux), router, and many more
@@ -141,8 +143,8 @@ We hope it will inspire you
 # Test it !
 git clone
 
-# Conclusion
+<!-- # Conclusion
 
-As developers we always looking for new workflows to help us in our daily work. But sometimes it can time consuming, we easily spend 10 hours per week just to search, learn and evaluate new tools/technologies. In fact, frameworks, and tools are more than just a research of efficiency, they are shaping the way we produce and deal with technologies. From a teamwork perspective, workflow is mandatory. This is why its so important and why we wanted to share our philosophy and the structure we built upon it.
+As developers we always looking for new workflows to help us in our daily work. But sometimes it can time consuming, we easily spend 10 hours per week just to search, learn and evaluate new tools/technologies. In fact, frameworks, and tools are more than just a research of efficiency, they are shaping the way we produce and deal with technologies. From a teamwork perspective, workflow is mandatory. This is why its so important and why we wanted to share our philosophy and the structure we built upon it. -->
 
 <!-- Most of you, I guess, are working along designers, (or are designers also ) everyday. Although Javascript is getting in backend also, it has been a long time dedicated to front-end and ux. We’re not gonna talk about other aspect of javascript here. -->

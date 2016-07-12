@@ -1,6 +1,6 @@
 require('polyfills/custom')
 
-require('setup/vue');
-require('setup/store');
+require('setup/vue')
+require('setup/store')
 
-require('./decouvrez/main');
+require('./decouvrez/main')
