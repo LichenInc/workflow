@@ -1,4 +1,6 @@
 # Introduction
+
+![Lichen](public/images/lichen-logo.png)
 ## A quick word about Lichen
 - 15 years of experience in design and advertising
 - Clients in many different sectors:
