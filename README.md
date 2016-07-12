@@ -1,17 +1,16 @@
 # Introduction
 
 ![Lichen](public/images/lichen-logo.png)
-## A quick word about Lichen
+## A quick word about ![lichen-logo](public/images/lichen-logo.svg)
+[Our website][ef3acaa1]
+[ef3acaa1]: http://lichencommunications.com/ "Lichen communications"
+
 - 15 years of experience in design and advertising
 - Clients in many different sectors:
 	- education (Educalivres)
 	- publishing (Gallimard, Renaud-Bray)
 	- medical equipment (Dufort & Lavigne)
 	- public institutions (MAC, BANQ, Amis de la montagne)
-
-- On going project :
-	- **Dokoma**: Streaming platform for teachers, students and family.
-	- **Robert veut lire**
 
 - What we are producing :
 	- websites (popup, CMS with admin, etc...)
@@ -22,8 +21,23 @@
 	- bots (textos, messenger, ...)
 	- CRMs
 	- interactive scenography
+	- and even hardware !
 
-- We like to play with web technologies, we love to hack it. **Lichen is a laboratory**
+	- We like to play with web technologies, we love to hack it, sometimes even break it. **Lichen is a laboratory**
+
+---------------
+
+## On going projects :
+
+![Dokoma](public/images/dokoma-logo.svg)
+
+**Dokoma**: Streaming platform for teachers, students and family.
+
+---------------
+
+![Robert veut lire](public/images/rvl-logo.png)
+
+**Robert veut lire**: Your virtual bookseller
 
 --------------
 
@@ -65,8 +79,8 @@
 	- it **generate HTML built with a designer-friendly interface**.
 	- You can create shapes, texts, widgets, and beautiful animations.
 	- Scenes system with transitions. Symbols, etc. Interactions handled with intern events.
-	. you can assign javascript function to be called on specifics hooks.
-	.
+	- you can assign javascript function to be called on specifics hooks.
+
 <!-- - Is we can build pretty complex why not try to build a whole website with it ?
 	. for designers the benefit is huge. We you build a prototype : you want to move the logo ? Go ahead move it it takes 2 sec. No more .psd or .indd. Also no need of the slicing process (exporting assets from photoshop)
 	. the client wants to have a sneak peek at the layouts ? Just export the layout to dropbox and send the link.
