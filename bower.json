@@ -3,13 +3,9 @@
   "version": "0.0.0",
   "dependencies": {
     "loadcss": "=0.2.4",
-
     "bourbon": "=4.2.6",
     "neat": "=1.7.2",
-    "flexboxgrid": "=6.3.0",
-
     "normalize-css": "=3.0.3",
-
     "animatewithsass": "=3.2.2"
   }
 }
