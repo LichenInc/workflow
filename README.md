@@ -141,7 +141,7 @@ Powerful lightweight reactive DOM library:
 # Thanks for listening
 We hope it will inspire you
 # Test it !
-git clone
+``git clone``
 
 <!-- # Conclusion
 
