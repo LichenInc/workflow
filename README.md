@@ -1,7 +1,6 @@
 # Introduction
 
-![Lichen](public/images/lichen-logo.png)
-## A quick word about ![lichen-logo](public/images/lichen-logo.svg)
+## A quick word about ![Lichen](public/images/lichen-logo-min.png)
 [Our website][ef3acaa1]
 [ef3acaa1]: http://lichencommunications.com/ "Lichen communications"
 
@@ -29,7 +28,7 @@
 
 ## On going projects :
 
-![Dokoma](public/images/dokoma-logo.svg)
+![Dokoma](public/images/dokoma-logo.png)
 
 **Dokoma**: Streaming platform for teachers, students and family.
 
