@@ -9,7 +9,7 @@
 	<key>createOfflineApplicationCache</key>
 	<false/>
 	<key>currentSceneContainer</key>
-	<string>143</string>
+	<string>86</string>
 	<key>customExportSlices</key>
 	<array>
 		<dict>
@@ -91,11 +91,11 @@
 	&lt;!-- scripts --&gt;
 	</string>
 	<key>lastCheckDate</key>
-	<date>2016-07-13T21:48:45Z</date>
+	<date>2016-07-13T21:59:34Z</date>
 	<key>layout</key>
 	<dict>
 		<key>currentInspectorPane</key>
-		<integer>7</integer>
+		<integer>0</integer>
 		<key>customizableLayout</key>
 		<dict>
 			<key>frame</key>
@@ -361,7 +361,9 @@
 	<key>monotypeProjectID</key>
 	<string>636B70E2-74C9-48A4-9F88-7C250000CA78-26895-000045DB680DDDDD</string>
 	<key>oidCounter</key>
-	<integer>157</integer>
+	<integer>158</integer>
+	<key>pageTitle</key>
+	<string>JS-Montréal</string>
 	<key>resourcesInfo</key>
 	<dict>
 		<key>groups</key>
@@ -574,7 +576,7 @@
 						<integer>60</integer>
 					</dict>
 					<key>canvasSize</key>
-					<string>{802, 586}</string>
+					<string>{803, 587}</string>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -986,9 +988,7 @@ function UnloadScene(hypeDocument, element, event) {
 			<key>documentIdentifier</key>
 			<string>4A8FB422-6CC1-4224-AD7A-B258E3C3DCD8-1787-0000048B4896E570</string>
 			<key>selectedObjects</key>
-			<array>
-				<string>105</string>
-			</array>
+			<array/>
 			<key>symbol</key>
 			<dict>
 				<key>addToNewSceneControllers</key>
