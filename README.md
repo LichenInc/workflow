@@ -46,12 +46,14 @@
 ![Dokoma](public/images/dokoma-logo.png)
 
 **Dokoma**: Streaming platform for teachers, students and family.
+[www.dokoma.com](http://www.dokoma.com)
 
 ---------------
 
 ![Robert veut lire](public/images/rvl-logo.png)
 
 **Robert veut lire**: Your virtual bookseller
+[www.robertveutlire.com](http://www.robertveutlire.com)
 
 --------------
 
