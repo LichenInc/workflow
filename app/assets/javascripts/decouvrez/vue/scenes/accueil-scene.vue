@@ -37,7 +37,7 @@
 
 div.accueil-scene.wrapper_scene(v-element-query, min-width="900px 1400px")
   div(v-markdown).
-    # alllosdkfjslkj
+    # Hello JS Montreal
 //- INTRODUCTION
 //- - A quick word about me/Lichen
 //- - 15 year of running business

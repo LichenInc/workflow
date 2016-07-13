@@ -9,7 +9,7 @@
 	<key>createOfflineApplicationCache</key>
 	<false/>
 	<key>currentSceneContainer</key>
-	<string>1</string>
+	<string>86</string>
 	<key>customExportSlices</key>
 	<array>
 		<dict>
@@ -91,17 +91,17 @@
 	&lt;!-- scripts --&gt;
 	</string>
 	<key>lastCheckDate</key>
-	<date>2016-07-12T23:20:14Z</date>
+	<date>2016-07-13T21:05:07Z</date>
 	<key>layout</key>
 	<dict>
 		<key>currentInspectorPane</key>
-		<integer>4</integer>
+		<integer>7</integer>
 		<key>customizableLayout</key>
 		<dict>
 			<key>frame</key>
-			<string>{{0, 0}, {2560, 1315}}</string>
+			<string>{{0, 0}, {1280, 675}}</string>
 			<key>identifier</key>
-			<string>container 9</string>
+			<string>container 426</string>
 			<key>isCustomizableViewContainer</key>
 			<true/>
 			<key>isCustomizableViewWrapper</key>
@@ -112,9 +112,9 @@
 			<array>
 				<dict>
 					<key>frame</key>
-					<string>{{0, 0}, {2289, 1315}}</string>
+					<string>{{0, 0}, {1009, 675}}</string>
 					<key>identifier</key>
-					<string>container 202</string>
+					<string>container 437</string>
 					<key>isCustomizableViewContainer</key>
 					<true/>
 					<key>isCustomizableViewWrapper</key>
@@ -125,9 +125,9 @@
 					<array>
 						<dict>
 							<key>frame</key>
-							<string>{{0, 0}, {2018, 1315}}</string>
+							<string>{{0, 0}, {738, 675}}</string>
 							<key>identifier</key>
-							<string>container 7</string>
+							<string>container 415</string>
 							<key>isCustomizableViewContainer</key>
 							<true/>
 							<key>isCustomizableViewWrapper</key>
@@ -138,9 +138,9 @@
 							<array>
 								<dict>
 									<key>frame</key>
-									<string>{{0, 0}, {135, 1315}}</string>
+									<string>{{0, 0}, {135, 675}}</string>
 									<key>identifier</key>
-									<string>container 2</string>
+									<string>container 405</string>
 									<key>isCustomizableViewContainer</key>
 									<true/>
 									<key>isCustomizableViewWrapper</key>
@@ -151,7 +151,7 @@
 									<array>
 										<dict>
 											<key>frame</key>
-											<string>{{0, 0}, {135, 1315}}</string>
+											<string>{{0, 0}, {135, 675}}</string>
 											<key>identifier</key>
 											<string>sceneSelectorCustomizableContainer</string>
 											<key>isCustomizableViewContainer</key>
@@ -161,9 +161,9 @@
 								</dict>
 								<dict>
 									<key>frame</key>
-									<string>{{136, 0}, {1882, 1315}}</string>
+									<string>{{136, 0}, {602, 675}}</string>
 									<key>identifier</key>
-									<string>container 5</string>
+									<string>container 406</string>
 									<key>isCustomizableViewContainer</key>
 									<true/>
 									<key>isCustomizableViewWrapper</key>
@@ -174,7 +174,7 @@
 									<array>
 										<dict>
 											<key>frame</key>
-											<string>{{136, 0}, {1882, 531}}</string>
+											<string>{{136, 0}, {602, 234}}</string>
 											<key>identifier</key>
 											<string>container 4</string>
 											<key>isCustomizableViewContainer</key>
@@ -187,7 +187,7 @@
 											<array>
 												<dict>
 													<key>frame</key>
-													<string>{{136, 0}, {1882, 531}}</string>
+													<string>{{136, 0}, {602, 234}}</string>
 													<key>identifier</key>
 													<string>timelineCustomizableContainer</string>
 													<key>isCustomizableViewContainer</key>
@@ -197,7 +197,7 @@
 										</dict>
 										<dict>
 											<key>frame</key>
-											<string>{{136, 532}, {1882, 783}}</string>
+											<string>{{136, 235}, {602, 440}}</string>
 											<key>identifier</key>
 											<string>container 3</string>
 											<key>isCustomizableViewContainer</key>
@@ -210,7 +210,7 @@
 											<array>
 												<dict>
 													<key>frame</key>
-													<string>{{136, 532}, {1882, 783}}</string>
+													<string>{{136, 235}, {602, 440}}</string>
 													<key>identifier</key>
 													<string>sceneEditorCustomizableContainer</string>
 													<key>isCustomizableViewContainer</key>
@@ -224,9 +224,9 @@
 						</dict>
 						<dict>
 							<key>frame</key>
-							<string>{{2019, 0}, {270, 1315}}</string>
+							<string>{{739, 0}, {270, 675}}</string>
 							<key>identifier</key>
-							<string>container 6</string>
+							<string>container 414</string>
 							<key>isCustomizableViewContainer</key>
 							<true/>
 							<key>isCustomizableViewWrapper</key>
@@ -237,7 +237,7 @@
 							<array>
 								<dict>
 									<key>frame</key>
-									<string>{{2019, 0}, {270, 1315}}</string>
+									<string>{{739, 0}, {270, 675}}</string>
 									<key>identifier</key>
 									<string>inspectorCustomizableContainer</string>
 									<key>isCustomizableViewContainer</key>
@@ -249,9 +249,9 @@
 				</dict>
 				<dict>
 					<key>frame</key>
-					<string>{{2290, 0}, {270, 1315}}</string>
+					<string>{{1010, 0}, {270, 675}}</string>
 					<key>identifier</key>
-					<string>container 201</string>
+					<string>container 436</string>
 					<key>isCustomizableViewContainer</key>
 					<true/>
 					<key>isCustomizableViewWrapper</key>
@@ -262,7 +262,7 @@
 					<array>
 						<dict>
 							<key>frame</key>
-							<string>{{2290, 0}, {270, 1315}}</string>
+							<string>{{1010, 0}, {270, 675}}</string>
 							<key>identifier</key>
 							<string>resourcesCustomizableContainer</string>
 							<key>isCustomizableViewContainer</key>
@@ -275,7 +275,7 @@
 		<key>keyframeTimelineHeight</key>
 		<real>124</real>
 		<key>mainWindowFrame</key>
-		<string>0 58 2560 1359 0 0 2560 1417 </string>
+		<string>0 58 1280 719 0 0 1280 777 </string>
 		<key>openTabs</key>
 		<array>
 			<dict>
@@ -284,7 +284,7 @@
 			</dict>
 		</array>
 		<key>selectedTabIndex</key>
-		<integer>1</integer>
+		<integer>0</integer>
 		<key>showInspectorView</key>
 		<true/>
 		<key>showResourcesView</key>
@@ -361,7 +361,7 @@
 	<key>monotypeProjectID</key>
 	<string>636B70E2-74C9-48A4-9F88-7C250000CA78-26895-000045DB680DDDDD</string>
 	<key>oidCounter</key>
-	<integer>136</integer>
+	<integer>139</integer>
 	<key>resourcesInfo</key>
 	<dict>
 		<key>groups</key>
@@ -394,7 +394,7 @@
 						<integer>60</integer>
 					</dict>
 					<key>canvasSize</key>
-					<string>{2509, 1044}</string>
+					<string>{802, 586}</string>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -442,13 +442,13 @@
 							<key>102</key>
 							<real>0.0</real>
 							<key>kTimelineDefaultIdentifier</key>
-							<real>0.0</real>
+							<real>0.89999997615814209</real>
 						</dict>
 						<key>timescale</key>
 						<integer>60</integer>
 					</dict>
 					<key>canvasSize</key>
-					<string>{2509, 1044}</string>
+					<string>{802, 586}</string>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -482,7 +482,6 @@
 	<array>
 		<string>3</string>
 		<string>103</string>
-		<string>135</string>
 	</array>
 	<key>sceneExportSlicesBySceneContainerOid</key>
 	<dict>
@@ -689,7 +688,7 @@ function UnloadScene(hypeDocument, element, event) {
 	<array>
 		<dict>
 			<key>documentIdentifier</key>
-			<string>B93E72C3-C095-4E2C-B56E-03D60EB007E7-5585-00003EE18EED1995</string>
+			<string>4A8FB422-6CC1-4224-AD7A-B258E3C3DCD8-1787-0000048B4896E570</string>
 			<key>selectedObjects</key>
 			<array/>
 			<key>symbol</key>
@@ -794,7 +793,7 @@ function UnloadScene(hypeDocument, element, event) {
 						<key>identifier</key>
 						<string>kTimelineDefaultIdentifier</string>
 						<key>name</key>
-						<string>Main Timeline</string>
+						<string>Timeline principale</string>
 						<key>userDefinedDuration</key>
 						<real>0.0</real>
 					</dict>
@@ -803,7 +802,7 @@ function UnloadScene(hypeDocument, element, event) {
 		</dict>
 		<dict>
 			<key>documentIdentifier</key>
-			<string>B93E72C3-C095-4E2C-B56E-03D60EB007E7-5585-00003EE18EED1995</string>
+			<string>4A8FB422-6CC1-4224-AD7A-B258E3C3DCD8-1787-0000048B4896E570</string>
 			<key>selectedObjects</key>
 			<array/>
 			<key>symbol</key>
@@ -977,7 +976,7 @@ function UnloadScene(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>2</string>
+							<string>4</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -989,7 +988,7 @@ function UnloadScene(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>Locked</string>
 							<key>objectValue</key>
-							<string>0</string>
+							<string>1</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -1117,7 +1116,7 @@ function UnloadScene(hypeDocument, element, event) {
 						<key>identifier</key>
 						<string>kTimelineDefaultIdentifier</string>
 						<key>name</key>
-						<string>Main Timeline</string>
+						<string>Timeline principale</string>
 						<key>userDefinedDuration</key>
 						<real>0.0</real>
 					</dict>

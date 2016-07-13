@@ -1,3 +1,16 @@
+# _How to build amazing apps with Hype + Vue.js_
+@LichenInc/workflow
+
+
+![hypelovesvue](public/images/vue-hype.png)
+:heart: Hype + Vue.js: a love story
+
+![](public/images/transparent.png)
+![](public/images/transparent.png)
+![](public/images/transparent.png)
+
+------------------
+
 # Introduction
 ![Lichen](public/images/lichen-logo.png)
 ## A quick word about ![Lichen](public/images/lichen-logo-min.png)
@@ -61,8 +74,11 @@
 
 # Hype + Vue.js
 
+**The best of both world:** a solution to build web applications with a WYSIWYG interface + and robust framework is needed
+
+------------
 ## Why ?
-- Avoid precoooked solutions: now all websites are looking the same
+- Avoid precoooked solutions: [now all websites are looking the same](http://www.novolume.co.uk/blog/all-websites-look-the-same/)
 - Very constraining production requirements:
 	- deadlines, deadlines, deadlines ...
 	- low budget
@@ -112,17 +128,17 @@ Powerful lightweight reactive DOM library:
 # Usage & features
 ## Architecture
 - SPA (single page application)
+	- backend  <-----  API ----> frontend
 
-- backend  <-----  API ----> frontend
 - tools:
-- devtools: gulp - browserify - babel
-- router: custom
-- datastore: jsdata(like ember)
-- apimocks: mockserver
-- icons: grunticon + component vue
-- element-query
-- ui components: custom and keen-ui
-- mustache to inject custom data
+	- [ ]devtools: gulp - browserify - babel
+	- [ ]router: custom
+	- [ ]datastore: jsdata(like ember-data)
+	- [ ]apimocks: mockserver
+	- [ ]icons: grunticon + component vue
+	- [ ]element-query
+	- [ ]ui components: custom and keen-ui
+	- [ ]mustache to inject custom data
 
 ## Pros and cons
 ## Cons:
