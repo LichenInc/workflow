@@ -7,7 +7,6 @@
 
 ![](public/images/transparent.png)
 ![](public/images/transparent.png)
-![](public/images/transparent.png)
 
 ------------------
 
@@ -127,18 +126,19 @@ Powerful lightweight reactive DOM library:
 
 # Usage & features
 ## Architecture
-- SPA (single page application)
-	- backend  <-----  API ----> frontend
 
-- tools:
-	- [ ]devtools: gulp - browserify - babel
-	- [ ]router: custom
-	- [ ]datastore: jsdata(like ember-data)
-	- [ ]apimocks: mockserver
-	- [ ]icons: grunticon + component vue
-	- [ ]element-query
-	- [ ]ui components: custom and keen-ui
-	- [ ]mustache to inject custom data
+SPA (single page application)
+- backend  <-----  API ----> frontend
+
+#### tools:
+- [ ]devtools: gulp - browserify - babel
+- [ ]router: custom
+- [ ]datastore: jsdata(like ember-data)
+- [ ]apimocks: mockserver
+- [ ]icons: grunticon + component vue
+- [ ]element-query
+- [ ]ui components: custom and keen-ui
+- [ ]mustache to inject custom data
 
 ## Pros and cons
 ## Cons:
@@ -152,7 +152,9 @@ Powerful lightweight reactive DOM library:
 - portable (you can get rid of hype if you want to at some point)
 
 # Examples
-[La classe numérique](https://laclasse.grandducenligne.com/v2/enseignant)
+[La classe numérique: exercices](https://laclasse.grandducenligne.com/eleve/connexion)
+
+<!-- code: rbpf -->
 
 # Thanks for listening
 We hope it will inspire you
