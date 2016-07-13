@@ -133,14 +133,14 @@ SPA (single page application)
 - backend  <-----  API ----> frontend
 
 #### tools:
-- [ ]devtools: gulp - browserify - babel
-- [ ]router: custom
-- [ ]datastore: jsdata(like ember-data)
-- [ ]apimocks: mockserver
-- [ ]icons: grunticon + component vue
-- [ ]element-query
-- [ ]ui components: custom and keen-ui
-- [ ]mustache to inject custom data
+- [ ] devtools: gulp - browserify - babel
+- [ ] router: custom
+- [ ] datastore: jsdata(like ember-data)
+- [ ] apimocks: mockserver
+- [ ] icons: grunticon + component vue
+- [ ] element-query
+- [ ] ui components: custom and keen-ui
+- [ ] mustache to inject custom data
 
 ## Pros and cons
 ## Cons:
