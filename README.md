@@ -1,5 +1,5 @@
 # Introduction
-
+![Lichen](public/images/lichen-logo.png)
 ## A quick word about ![Lichen](public/images/lichen-logo-min.png)
 [Our website][ef3acaa1]
 [ef3acaa1]: http://lichencommunications.com/ "Lichen communications"
